@@ -1,0 +1,72 @@
+.outerContainer{
+    display: flex;
+    font-family: Roboto;
+}
+.outerContainerOpacity{
+    background-color: black;
+    opacity: 0.5;
+}
+.createGroupPopUp{
+    z-index: 100;
+    display: block;
+}
+.dontShowpopUp{
+    display: none;
+}
+.left {
+  width: 25vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.left>h2{
+    font-family: Roboto;
+    margin: 0;
+    padding: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.createBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createBox>p:hover{
+    transform:scale(1.01);
+}
+.createBox>p{
+    transition: transform 0.3s;
+    font-family: "Roboto";
+    color: white;
+    background: black;
+    margin: 25px;
+    padding: 10px 20px;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+}
+.titleCards{
+    flex: 1;
+    overflow-y: auto;
+}
+.right{
+    flex: 1;
+    background-color: #F7ECDC;
+    position: relative;
+
+}
+.encryptDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.encryptDiv>img{
+    margin: 10px;
+}
+

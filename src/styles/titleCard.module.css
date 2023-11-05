@@ -1,0 +1,28 @@
+.outerContainer{
+    display: flex;
+    width: 90%;
+    padding: 3% 0;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.circlerDiv{
+    margin-left: 5%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+}
+.circlerDiv>h3{
+    color: white;
+    font-family: Roboto;
+    letter-spacing: 2.5px;
+}
+.title{
+    font-family: Roboto;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    font-weight: 500;
+}

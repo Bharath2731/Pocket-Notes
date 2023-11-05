@@ -1,0 +1,83 @@
+.outer{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.titleArea{
+    padding: 20px;
+    background-color: #E8E8E8;
+}
+.circler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: larger;
+    font-family: Roboto;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.messagesArea{
+    flex: 1;
+}
+.inputArea{
+    height: 20%;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inputArea>img{
+    position: absolute;
+    bottom: 15%;
+    right: 3%;
+    cursor: pointer;
+}
+.inputArea>img:hover{
+    scale: 1.1;
+}
+.inputArea>textarea{
+    width: 96%;
+    height: 75%;
+    padding: 12px;
+    font-size: larger;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+.messagesArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+}
+.messagearea{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: start;
+    width: 90%;
+    letter-spacing: 1.2px;
+    line-height: 150%;
+}
+.messageareaLeft{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: Roboto;
+}
+.messageareaRight{
+    flex: 1;
+    word-break: break-word;
+}

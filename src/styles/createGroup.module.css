@@ -1,0 +1,87 @@
+.outer{
+    z-index: 1;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 33vh;
+    left: 33vw;
+    height: 30vh;
+    width: 35vw;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+.outer>h3{
+    padding-left: 3%;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-weight: 500;
+}
+input:focus{
+    outline: none;
+}
+.input>input{
+    font-size: medium;
+    letter-spacing: 2px;
+    width: 60%;
+    /* height: 100%; */
+    padding: 10px 20px;
+    border: solid 1.5px #CCC;
+    border-radius: 20px;
+}
+.colorBox{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.colorBox>p{
+    font-weight: 500;
+}
+.colors{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.singleColor{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.singleColor:hover{
+    transform: scale(1.1);
+}
+.selectedColor{
+    border: 2px solid black;
+}
+.createbtn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.createbtn>button{
+    padding: 6px 40px;
+    letter-spacing: 1px;
+    font-family: Roboto;
+    font-size: medium;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.createbtn>button:hover{
+    transform: scale(1.05);
+}
