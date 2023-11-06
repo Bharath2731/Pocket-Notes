@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import TitleCard from "./TitleCard";
 import styles from "../styles/pocketNotes.module.css";
 import CreateGroup from "./CreateGroup";
-import encryptIcon from "../images/encryptIcon.png";
+import heroImg from '../images/heroImage.png'
 import Hero from "./Hero";
 import MessageBox from "./MessageBox";
 function PocketNotes() {
@@ -52,6 +52,7 @@ function PocketNotes() {
             <p onClick={handlePopUp}>+ Create Notes group</p>
           </div>
           <div className={styles.titleCards}>
+            {/* {(groupsTitlesArray.length===0)? <img src={heroImg} alt="" className={styles.mobileHero} />: '' } */}
             {groupsTitlesArray.map((element)=>{
               return <div onClick={() => handleTitleCardClick(element)} key={element}> <TitleCard title={element.title} color={element.color} selectedTitle={selectedTitle} /> </div>
             })}

@@ -20,6 +20,9 @@
   display: flex;
   flex-direction: column;
 }
+.mobileHero{
+    display: none;
+}
 .left>h2{
     font-family: Roboto;
     margin: 0;
@@ -88,5 +91,10 @@
     }
     .createBox>p{
         font-size: small;
+    }
+    .mobileHero{
+        margin-top: 25%;
+        display: block;
+        width: 100%;
     }
 }

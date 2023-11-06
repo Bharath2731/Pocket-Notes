@@ -1,9 +1,9 @@
 import React from 'react'
-import PocketNotes from '../src/components/PocketNotes'
+import HomePage from './pages/HomePage'
 function App() {
   return (
     <div>
-      <PocketNotes/>
+      <HomePage/>
     </div>
   )
 }

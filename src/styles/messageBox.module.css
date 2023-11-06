@@ -7,6 +7,9 @@
     padding: 20px;
     background-color: #E8E8E8;
 }
+.backBtn{
+    display: none;
+}
 .circler{
     display: flex;
     align-items: center;
@@ -45,7 +48,7 @@
     width: 96%;
     height: 75%;
     padding: 12px;
-    font-size: larger;
+    font-size: medium;
     font-family: Roboto;
     letter-spacing: 1.5px;
     border: none;
@@ -113,5 +116,8 @@ textarea:focus{
     .inputArea>img{
         bottom: 12%;
         right: 5%;
+    }
+    .backBtn{
+        display: block;
     }
 }
