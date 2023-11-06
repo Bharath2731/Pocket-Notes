@@ -24,6 +24,7 @@ function CreateGroup(props) {
   }
 
   function handleCreateBtn() {
+    if(groupName==='')return
     const groupObj = { title: groupName, color: selectedColor, messages:[], };
     props.setGroupsTitlesArray([...props.groupsTitlesArray, groupObj]);
     props.handlePopUp()

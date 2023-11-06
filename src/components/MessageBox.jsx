@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/messageBox.module.css";
 import sendBtn from "../images/sendBtn.png";
+import backBtn from '../images/backBtn.png'
 function MessageBox(props) {
     const TitleInCircle =
       props.selectedTitle?.title?.slice(0, 2).toUpperCase() || "";
@@ -11,6 +12,10 @@ function MessageBox(props) {
         'August', 'September', 'October', 'November', 'December'
       ];
       return string.split('/')[1] + ' ' + months[string.split('/')[0] - 1] + ' ' + string.split('/')[2];
+    }
+
+    function handlebackClick(){
+      props.setShowLeft(true)
     }
   
     function handleSendMessage() {
@@ -52,6 +57,7 @@ function MessageBox(props) {
       <div>
         <div className={styles.outer}>
           <div className={styles.titleArea} style={{ display: 'flex', alignItems: 'center' }}>
+            <img src={backBtn} alt="" style={{margin:' 0 7.5px',cursor:'pointer',scale:"0.75"}} className={styles.backBtn} onClick={handlebackClick} />
             <div className={styles.circler} style={{ background: props.selectedTitle.color }}>
               <p>{TitleInCircle || ''}</p>
             </div>

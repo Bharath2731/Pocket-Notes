@@ -69,4 +69,24 @@
 .encryptDiv>img{
     margin: 10px;
 }
-
+@media only screen and (max-width: 600px){
+    
+    .dontShowleft{
+        display: none;
+    }
+    .showleft{
+        display: block;
+    }
+    .dontShowright{
+        display: none;
+    }
+    .showright{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .createBox>p{
+        font-size: small;
+    }
+}

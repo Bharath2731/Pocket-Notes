@@ -26,3 +26,13 @@
     margin-left: 20px;
     font-weight: 500;
 }
+@media only screen and (max-width:600px){
+    .circlerDiv{
+        height: 7vh;
+        width: 7vh;
+        font-size: small;
+    }
+    .title>p{
+        font-size: small;
+    }
+}

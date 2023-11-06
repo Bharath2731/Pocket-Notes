@@ -13,6 +13,9 @@ function PocketNotes() {
   const [selectedTitle, setSelectedTitle] = useState(groupsTitlesArray[0]);
   const [newMessage,setNewMessage]=useState('')
 
+  //for responsive
+  const [showLeft, setShowLeft] = useState(true);
+
   useEffect(() => {
     localStorage.setItem("groupsTitlesArray", JSON.stringify(groupsTitlesArray));
   }, [groupsTitlesArray]);
@@ -26,6 +29,7 @@ function PocketNotes() {
   const handleTitleCardClick = (titleData) => {
     setSelectedTitle(titleData);
     setNewMessage('')
+    setShowLeft(false)
   };
 
   return (
@@ -42,20 +46,20 @@ function PocketNotes() {
           popUp ? styles.outerContainerOpacity : ""
         }`}
       >
-        <div className={styles.left}>
+        <div className={`${styles.left} ${showLeft?styles.showleft :styles.dontShowleft}`}>
           <h2>Pocket Notes</h2>
           <div className={styles.createBox}>
             <p onClick={handlePopUp}>+ Create Notes group</p>
           </div>
           <div className={styles.titleCards}>
             {groupsTitlesArray.map((element)=>{
-              return <div onClick={() => handleTitleCardClick(element)}> <TitleCard title={element.title} color={element.color} selectedTitle={selectedTitle} /> </div>
+              return <div onClick={() => handleTitleCardClick(element)} key={element}> <TitleCard title={element.title} color={element.color} selectedTitle={selectedTitle} /> </div>
             })}
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={`${styles.right} ${showLeft?styles.dontShowright :styles.showright}`}>
         {selectedTitle ? (
-            <MessageBox selectedTitle={selectedTitle} newMessage={newMessage} setNewMessage={setNewMessage} groupsTitlesArray={groupsTitlesArray} setSelectedTitle={setSelectedTitle} />
+            <MessageBox selectedTitle={selectedTitle} newMessage={newMessage} setNewMessage={setNewMessage} groupsTitlesArray={groupsTitlesArray} setSelectedTitle={setSelectedTitle}  setShowLeft={setShowLeft}/>
           ) : (
             <Hero />
           )}

@@ -1,5 +1,5 @@
 .outer{
-    z-index: 1;
+    z-index: 10;
     font-family: Roboto;
     letter-spacing: 1px;
     position: fixed;
@@ -84,4 +84,24 @@ input:focus{
 }
 .createbtn>button:hover{
     transform: scale(1.05);
+}
+@media only screen and (max-width:600px){
+    .outer{
+        width: 90%;
+        left: 5%;
+        font-size: small;
+    }
+    .createbtn>button{
+        font-size: small;
+    }
+    .singleColor{
+        height: 3vh;
+        width: 3vh;
+    }
+    .input>input{
+        font-size: small;
+    }
+    .createbtn{
+        justify-content: center;
+    }
 }

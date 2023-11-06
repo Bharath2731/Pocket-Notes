@@ -81,3 +81,37 @@ textarea:focus{
     flex: 1;
     word-break: break-word;
 }
+
+@media only screen and (max-width: 600px){
+    .circler{
+        height: 3.5vh;
+        width: 3.5vh;
+        font-size: small;
+    }
+    .titleArea{
+        font-size: small;
+    }
+    .inputArea{
+        font-size: small;
+    }
+    .inputArea>img{
+        scale: 0.7;
+    }
+    .messagearea{
+        font-size: small;
+    }
+    .messageareaLeft{
+        width: 40%;
+        font-size: smaller;
+    }
+    .messageareaRight{
+        font-size: smaller;
+    }
+    .inputArea>textarea{
+        width: 90%;
+    }
+    .inputArea>img{
+        bottom: 12%;
+        right: 5%;
+    }
+}
